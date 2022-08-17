@@ -2,10 +2,10 @@ const Header = () => {
     return (
         <header>
             <form className="header--form">
-                <label for="search" className="form--label">
-                    <span clas="label--invisible">Search</span>
-                    <input id="search" type="text" class="text--input"/>
-                    <input type="reset" value="Clear" class="clear--button"/>
+                <label htmlFor="search" className="form--label">
+                    <span className="label--invisible">Search</span>
+                    <input id="search" type="text" className="text--input"/>
+                    <input type="reset" value="Clear" className="clear--button"/>
                 </label>
             </form>
         </header>
