@@ -122,4 +122,28 @@ header {
   font-weight: 700;
   padding: 0.5rem;
   font-size: 0.875rem;
+}
+
+@media screen and (min-width: 768px) {
+  .jobs--container {
+    padding: 5rem 8vw;
+  }
+  .jobs--container article {
+    flex-direction: row;
+    align-items: center;
+  }
+  .jobs--container article img {
+    width: 72px;
+    margin-top: unset;
+  }
+  .jobs--container article .job--information {
+    width: unset;
+  }
+  .jobs--container article .post--info {
+    border-bottom: unset;
+    padding-bottom: unset;
+  }
+  .jobs--container article .languages--tools--container {
+    margin-left: auto;
+  }
 }/*# sourceMappingURL=general.css.map */
