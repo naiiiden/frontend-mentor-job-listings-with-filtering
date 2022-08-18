@@ -1,6 +1,10 @@
-const JobPosition = ({company_logo, company, new_job, featured, position, postedAt, contract, location, languages}) => {
+const JobPosition = ({company_logo, company, new_job, featured, position, postedAt, contract, location, languages, tools}) => {
     const listLanguages = languages.map((language) => 
         <li><button>{language}</button></li>
+    );
+
+    const listTools = tools.map((tool) => 
+        <li><button>{tool}</button></li>
     );
     
     return (
@@ -20,7 +24,10 @@ const JobPosition = ({company_logo, company, new_job, featured, position, posted
                 </div>
             </div>
             <div className="languages--tools--container">
-                <ul>{listLanguages}</ul>
+                <ul>
+                    {listLanguages}
+                    {listTools}    
+                </ul>
             </div>
         </article>
     )

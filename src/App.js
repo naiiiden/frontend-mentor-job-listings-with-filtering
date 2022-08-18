@@ -7,8 +7,10 @@ import JobPosition from "./components/JobPosition";
 
 const App = () => {
   const JobsList = Jobs.map(job => {
-    return <JobPosition key={job.id} company={job.company} languages={job.languages}/>
-  })
+    return <JobPosition key={job.id} company={job.company} languages={job.languages} tools={job.tools}/>
+  });
+
+
 
   return (
     <div>
