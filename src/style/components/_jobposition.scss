@@ -9,5 +9,92 @@
         border-radius: 4.875px;
         box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
         border-left: 4px solid $desaturated-dark-cyan;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        position: relative;
+        gap: 1rem;
+        padding: 1rem;
+
+        img {
+            width: 56px;
+            margin-top: -2.625rem;
+        }
+
+        .job--information {
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
+            width: 100%;
+        }
+
+        .company--name--container {
+            display: flex;
+            align-items: center;
+            gap: .5rem;
+
+            h3 {
+                color: $desaturated-dark-cyan;
+                font-size: 1rem;
+            }
+
+            .new--span, .featured--span {
+                background: $desaturated-dark-cyan;
+                color: #fff;
+                font-weight: 700;
+                padding: .25rem .375rem;
+                border-radius: .75rem;
+                font-size: .875rem;
+
+                &.new--span {
+                    margin-left: 1rem;
+                }
+
+                &.featured--span {
+                    background: $very-dark-grayish-cyan;
+
+                }
+            }
+        }
+
+        h2 {
+            color: $very-dark-grayish-cyan;
+            font-size: 1rem;
+        }
+
+        .post--info {
+            display: flex;
+            align-items: center;
+            gap: .5rem;
+            color: $dark-grayish-cyan;
+            font-weight: 500;
+            border-bottom: 1px solid $dark-grayish-cyan;
+            padding-bottom: 1rem;
+
+            .contract::before, .location::before {
+                content: "•";
+                margin-right: .5rem;
+            }
+        }
+
+        .languages--tools--container {
+            ul {
+                list-style-type: none;
+                display: flex;
+                gap: 1rem;
+                flex-wrap: wrap;
+
+                button {
+                    border: none;
+                    border-radius: .5rem;
+                    background: $light-grayish-cyan2;
+                    color: $desaturated-dark-cyan;
+                    font-family: inherit;
+                    font-weight: 700;
+                    padding: .5rem;
+                    font-size: .875rem;
+                }
+            }
+        }
     }
 }
