@@ -2,7 +2,7 @@ const Jobs = [
   {
     "id": 1,
     "company": "Photosnap",
-    "logo": "./images/photosnap.svg",
+    "logo": require("../src/images/photosnap.png"),
     "new": true,
     "featured": true,
     "position": "Senior Frontend Developer",
@@ -17,7 +17,7 @@ const Jobs = [
   {
     "id": 2,
     "company": "Manage",
-    "logo": "../src/images/manage.svg",
+    "logo": require("../src/images/manage.png"),
     "new": true,
     "featured": true,
     "position": "Fullstack Developer",
@@ -32,7 +32,7 @@ const Jobs = [
   {
     "id": 3,
     "company": "Account",
-    "logo": "./images/account.svg",
+    "logo": require("../src/images/account.png"),
     "new": true,
     "featured": false,
     "position": "Junior Frontend Developer",
@@ -47,7 +47,7 @@ const Jobs = [
   {
     "id": 4,
     "company": "MyHome",
-    "logo": "./images/myhome.svg",
+    "logo": require("../src/images/myhome.png"),
     "new": false,
     "featured": false,
     "position": "Junior Frontend Developer",
@@ -62,7 +62,7 @@ const Jobs = [
   {
     "id": 5,
     "company": "Loop Studios",
-    "logo": "./images/loop-studios.svg",
+    "logo": require("../src/images/loop-studios.png"),
     "new": false,
     "featured": false,
     "position": "Software Engineer",
@@ -77,7 +77,7 @@ const Jobs = [
   {
     "id": 6,
     "company": "FaceIt",
-    "logo": "./images/faceit.svg",
+    "logo": require("../src/images/faceit.png"),
     "new": false,
     "featured": false,
     "position": "Junior Backend Developer",
@@ -92,7 +92,7 @@ const Jobs = [
   {
     "id": 7,
     "company": "Shortly",
-    "logo": "./images/shortly.svg",
+    "logo": require("../src/images/shortly.png"),
     "new": false,
     "featured": false,
     "position": "Junior Developer",
@@ -107,7 +107,7 @@ const Jobs = [
   {
     "id": 8,
     "company": "Insure",
-    "logo": "./images/insure.svg",
+    "logo": require("../src/images/insure.png"),
     "new": false,
     "featured": false,
     "position": "Junior Frontend Developer",
@@ -122,7 +122,7 @@ const Jobs = [
   {
     "id": 9,
     "company": "Eyecam Co.",
-    "logo": "./images/eyecam-co.svg",
+    "logo": require("../src/images/eyecam-co.png"),
     "new": false,
     "featured": false,
     "position": "Full Stack Engineer",
@@ -137,7 +137,7 @@ const Jobs = [
   {
     "id": 10,
     "company": "The Air Filter Company",
-    "logo": "./images/the-air-filter-company.svg",
+    "logo": require("../src/images/the-air-filter-company.png"),
     "new": false,
     "featured": false,
     "position": "Front-end Dev",

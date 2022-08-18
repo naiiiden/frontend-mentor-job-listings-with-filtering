@@ -13,7 +13,6 @@ const App = () => {
   return (
     <div>
       <Header/>
-      <p>hey</p>
       {JobsList}
     </div>
   )
