@@ -87,6 +87,9 @@ header {
 .jobs--container article .company--name--container .new--span.featured--span, .jobs--container article .company--name--container .featured--span.featured--span {
   background: hsl(180deg, 14%, 20%);
 }
+.jobs--container article a {
+  text-decoration: none;
+}
 .jobs--container article h2 {
   color: hsl(180deg, 14%, 20%);
   font-size: 1rem;

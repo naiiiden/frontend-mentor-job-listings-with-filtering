@@ -16,7 +16,7 @@ const JobPosition = ({company_logo, company, new_job, featured, position, posted
                     {new_job && <span className="new--span">NEW!</span>}
                     {featured && <span className="featured--span">FEATURED</span>}
                 </div>
-                <h2 className="job--position">{position}</h2>
+                <a href="/"><h2 className="job--position">{position}</h2></a>
                 <div className="post--info">
                     <span className="postedAt">{postedAt}</span>
                     <span className="contract">{contract}</span>
