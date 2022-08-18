@@ -13,8 +13,8 @@ const JobPosition = ({company_logo, company, new_job, featured, position, posted
             <div className="job--information">
                 <div className="company--name--container">
                     <h3>{company}</h3>
-                    {new_job && <span className="new--span">{new_job}</span>}
-                    {featured && <span className="featured--span">{featured}</span>}
+                    {new_job && <span className="new--span">NEW!</span>}
+                    {featured && <span className="featured--span">FEATURED</span>}
                 </div>
                 <h2 className="job--position">{position}</h2>
                 <div className="post--info">
