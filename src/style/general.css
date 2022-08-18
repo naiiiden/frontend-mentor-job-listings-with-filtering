@@ -11,7 +11,7 @@ body {
   min-height: 100vh;
   font-family: League Spartan, sans-serif;
   font-size: 0.9375rem;
-  background: hsl(180deg, 31%, 95%);
+  background: hsl(180deg, 52%, 96%);
 }
 
 img {
@@ -34,4 +34,16 @@ header {
     background-repeat: no-repeat;
     background-size: 100% 100%;
   }
+}
+.jobs--container {
+  padding: 3rem 1.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+}
+.jobs--container article {
+  background: #fff;
+  border-radius: 4.875px;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  border-left: 4px solid hsl(180deg, 29%, 50%);
 }/*# sourceMappingURL=general.css.map */

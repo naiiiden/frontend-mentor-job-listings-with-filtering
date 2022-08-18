@@ -1,0 +1,13 @@
+.jobs--container {
+    padding: 3rem 1.5rem;
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+
+    article {
+        background: #fff;
+        border-radius: 4.875px;
+        box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+        border-left: 4px solid $desaturated-dark-cyan;
+    }
+}

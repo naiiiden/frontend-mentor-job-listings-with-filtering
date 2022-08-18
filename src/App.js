@@ -13,7 +13,9 @@ const App = () => {
   return (
     <div>
       <Header/>
-      {JobsList}
+      <div className="jobs--container">
+        {JobsList}
+      </div>
     </div>
   )
 }
