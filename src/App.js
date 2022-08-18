@@ -1,13 +1,20 @@
 import "./style/general.css";
 import Header from "./components/Header";
+import Jobs from "./Jobs"; 
 import JobPosition from "./components/JobPosition";
 
+
+
 const App = () => {
+  const JobsList = Jobs.map(job => {
+    return <JobPosition key={job.id} company={job.company} languages={job.languages}/>
+  })
+
   return (
     <div>
       <Header/>
       <p>hey</p>
-      <JobPosition languages={languages}/>
+      {JobsList}
     </div>
   )
 }
