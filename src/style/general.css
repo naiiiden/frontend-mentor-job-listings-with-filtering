@@ -75,6 +75,7 @@ form .clear--button {
   }
 }
 .jobs--container {
+  margin-top: 2rem;
   padding: 3rem 1.5rem;
   display: flex;
   flex-direction: column;
