@@ -52,7 +52,11 @@ form {
     }
 
     form {
-        padding: 6.75rem 8vw 0 8vw;
+        padding: 6rem 8vw 0 8vw;
+
+        .text--input {
+            height: 3rem;
+        }
     }
 }
 

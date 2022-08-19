@@ -71,7 +71,10 @@ form .clear--button {
     background-size: 100% 100%;
   }
   form {
-    padding: 6.75rem 8vw 0 8vw;
+    padding: 6rem 8vw 0 8vw;
+  }
+  form .text--input {
+    height: 3rem;
   }
 }
 .jobs--container {
