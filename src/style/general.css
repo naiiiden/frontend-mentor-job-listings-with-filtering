@@ -146,4 +146,13 @@ header {
   .jobs--container article .languages--tools--container {
     margin-left: auto;
   }
+}
+@media screen and (min-width: 1024px) {
+  .jobs--container article h2 {
+    transition: 0.1s;
+  }
+  .jobs--container article h2:hover {
+    color: hsl(180deg, 29%, 50%);
+    transition: 0.1s;
+  }
 }/*# sourceMappingURL=general.css.map */

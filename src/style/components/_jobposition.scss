@@ -131,3 +131,18 @@
         }
     }
 }
+
+@media screen and (min-width: 1024px) {
+    .jobs--container {
+        article {
+            h2 {
+                transition: .1s;
+
+                &:hover {
+                    color: $desaturated-dark-cyan;
+                    transition: .1s;
+                }
+            }
+        }
+    }
+}
