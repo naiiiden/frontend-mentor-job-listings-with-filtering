@@ -7,10 +7,20 @@ header {
     position: relative;
 }
 
+form {
+    border: 1px solid red;
+    padding: 6.75rem 1.5rem 0 1.5rem;
+}
+
 @media screen and (min-width: 768px) {
     header {
         background-image: url("../images/bg-header-desktop.svg");
         background-repeat: no-repeat;
         background-size: 100% 100%;
     }
+
+    form {
+        padding: 6.75rem 8vw 0 8vw;
+    }
 }
+
