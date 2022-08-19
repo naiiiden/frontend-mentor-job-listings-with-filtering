@@ -168,6 +168,7 @@ form .clear--button {
 
 @media screen and (min-width: 768px) {
   .jobs--container {
+    margin-top: unset;
     padding: 5rem 8vw;
   }
   .jobs--container article {
