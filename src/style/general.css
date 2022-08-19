@@ -77,6 +77,17 @@ form .clear--button {
     height: 3rem;
   }
 }
+@media screen and (min-width: 1024px) {
+  form .clear--button {
+    cursor: pointer;
+    transition: 0.1s;
+  }
+  form .clear--button:hover {
+    color: hsl(180deg, 29%, 50%);
+    text-decoration: underline;
+    transition: 0.1s;
+  }
+}
 .jobs--container {
   margin-top: 2rem;
   padding: 3rem 1.5rem;
