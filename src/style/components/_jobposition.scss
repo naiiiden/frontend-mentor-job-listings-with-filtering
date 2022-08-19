@@ -143,6 +143,21 @@
                     transition: .1s;
                 }
             }
+
+            .languages--tools--container {
+                ul {
+                    button {
+                        cursor: pointer;
+                        transition: .1s;
+
+                        &:hover {
+                            color: $light-grayish-cyan;
+                            background: $desaturated-dark-cyan;
+                            transition: .1s;    
+                        }
+                    }
+                }
+            }
         }
     }
 }
