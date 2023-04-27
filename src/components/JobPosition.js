@@ -4,11 +4,19 @@ const JobPosition = ({ company_logo, company, new_job, featured, position, poste
     const dispatch = useFilterDispatch()
     
     const listLanguages = languages.map((language) => 
-    <li><button data-language={language} onClick={() => dispatch({ type: 'ADD_FILTER', filterItem: language })}>{language}</button></li>
+        <li>
+            {/* test reset button */}
+            <button onClick={() => dispatch({ type:'CLEAR' })}>reset</button>
+            <button data-language={language} onClick={() => dispatch({ type: 'ADD_FILTER', filterItem: language })}>{language}</button>
+        </li>
     );
     
     const listTools = tools.map((tool) => 
-    <li><button data-tool={tool} onClick={() => dispatch({ type: 'ADD_FILTER', filterItem: tool })}>{tool}</button></li>
+        <li>
+            {/* test reset button */}
+            <button onClick={() => dispatch({ type:'CLEAR' })}>reset</button>
+            <button data-tool={tool} onClick={() => dispatch({ type: 'ADD_FILTER', filterItem: tool })}>{tool}</button>
+        </li>
     );
     
 

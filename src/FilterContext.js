@@ -3,7 +3,7 @@ import { createContext, useReducer, useContext } from "react";
 const filterReducer = (state, action) => {
     switch (action.type) {
         case 'ADD_FILTER': return [...state, action.filterItem]
-        case 'CLEAR': 
+        case 'CLEAR': return []
         default: return state
     }
 }
