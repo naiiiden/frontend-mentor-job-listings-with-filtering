@@ -1,8 +1,6 @@
 import { createContext, useReducer, useContext } from "react";
 
 const filterReducer = (state, action) => {
-    console.log(1, state)
-
     switch (action.type) {
         case 'ADD_FILTER': return state.includes(action.filterItem) ? state : [...state, action.filterItem]
         case 'REMOVE_FILTER': return state.filter(item => item !== action.filterItem)

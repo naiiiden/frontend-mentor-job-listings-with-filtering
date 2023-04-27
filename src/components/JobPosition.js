@@ -7,7 +7,7 @@ const JobPosition = ({ company_logo, company, new_job, featured, position, poste
         <li>
             {/* test reset button */}
             <button onClick={() => dispatch({ type: 'CLEAR' })}>reset</button>
-            <button data-language={language} onClick={() => dispatch({ type: 'ADD_FILTER', filterItem: language })}>{language}</button>
+            <button onClick={() => dispatch({ type: 'ADD_FILTER', filterItem: language })}>{language}</button>
         </li>
     );
     
@@ -16,7 +16,7 @@ const JobPosition = ({ company_logo, company, new_job, featured, position, poste
             {/* test reset button */}
             <button onClick={() => dispatch({ type: 'CLEAR' })}>reset</button>
             <button onClick={() => dispatch({ type: 'REMOVE_FILTER', filterItem: tool })}>remove {tool}</button>
-            <button data-tool={tool} onClick={() => dispatch({ type: 'ADD_FILTER', filterItem: tool })}>{tool}</button>
+            <button onClick={() => dispatch({ type: 'ADD_FILTER', filterItem: tool })}>{tool}</button>
         </li>
     );
     
@@ -30,11 +30,20 @@ const JobPosition = ({ company_logo, company, new_job, featured, position, poste
                     {new_job && <span className="new--span">NEW!</span>}
                     {featured && <span className="featured--span">FEATURED</span>}
                 </div>
-                <a href="/"><h2 className="job--position" data-role={role} data-level={level}>{position}</h2></a>
+                <a href="/"><h2 className="job--position">{position}</h2></a>
                 <div className="post--info">
-                    <span className="postedAt">{postedAt}</span>
-                    <span className="contract">{contract}</span>
-                    <span className="location">{location}</span>
+                    <p className="postedAt">
+                        <span className="sr-only">Posted:</span>
+                        {postedAt}
+                    </p>
+                    <p className="contract">
+                        <span className="sr-only">Contract:</span>
+                        {contract}
+                    </p>
+                    <p className="location">    
+                        <span className="sr-only">Location:</span>
+                        {location}
+                    </p>
                 </div>
             </div>
             <div className="languages--tools--container">
