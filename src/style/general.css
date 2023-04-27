@@ -12,7 +12,7 @@ body {
   min-height: 100vh;
   font-family: League Spartan, sans-serif;
   font-size: 0.9375rem;
-  background: hsl(180deg, 52%, 96%);
+  background: hsl(180, 52%, 96%);
 }
 
 img {
@@ -22,7 +22,7 @@ img {
 
 header {
   height: 7.5rem;
-  background-color: hsl(180deg, 29%, 50%);
+  background-color: hsl(180, 29%, 50%);
   background-image: url("../images/bg-header-mobile.svg");
   background-size: 100% 100%;
   background-repeat: no-repeat;
@@ -41,7 +41,6 @@ form .label--invisible {
   visibility: hidden;
   -webkit-user-select: none;
      -moz-user-select: none;
-      -ms-user-select: none;
           user-select: none;
   pointer-events: none;
 }
@@ -61,7 +60,7 @@ form .clear--button {
   font-size: 1rem;
   border: none;
   background: none;
-  color: hsl(180deg, 14%, 20%);
+  color: hsl(180, 14%, 20%);
 }
 
 @media screen and (min-width: 768px) {
@@ -83,7 +82,7 @@ form .clear--button {
     transition: 0.1s;
   }
   form .clear--button:hover {
-    color: hsl(180deg, 29%, 50%);
+    color: hsl(180, 29%, 50%);
     text-decoration: underline;
     transition: 0.1s;
   }
@@ -99,7 +98,7 @@ form .clear--button {
   background: #fff;
   border-radius: 4.875px;
   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
-  border-left: 4px solid hsl(180deg, 29%, 50%);
+  border-left: 4px solid hsl(180, 29%, 50%);
   display: flex;
   flex-direction: column;
   align-items: flex-start;
@@ -123,11 +122,11 @@ form .clear--button {
   gap: 0.5rem;
 }
 .jobs--container article .company--name--container h3 {
-  color: hsl(180deg, 29%, 50%);
+  color: hsl(180, 29%, 50%);
   font-size: 1rem;
 }
 .jobs--container article .company--name--container .new--span, .jobs--container article .company--name--container .featured--span {
-  background: hsl(180deg, 29%, 50%);
+  background: hsl(180, 29%, 50%);
   color: #fff;
   font-weight: 700;
   padding: 0.25rem 0.375rem;
@@ -138,22 +137,22 @@ form .clear--button {
   margin-left: 1rem;
 }
 .jobs--container article .company--name--container .new--span.featured--span, .jobs--container article .company--name--container .featured--span.featured--span {
-  background: hsl(180deg, 14%, 20%);
+  background: hsl(180, 14%, 20%);
 }
 .jobs--container article a {
   text-decoration: none;
 }
 .jobs--container article h2 {
-  color: hsl(180deg, 14%, 20%);
+  color: hsl(180, 14%, 20%);
   font-size: 1rem;
 }
 .jobs--container article .post--info {
   display: flex;
   align-items: center;
   gap: 0.5rem;
-  color: hsl(180deg, 8%, 52%);
+  color: hsl(180, 8%, 52%);
   font-weight: 500;
-  border-bottom: 1px solid hsl(180deg, 8%, 52%);
+  border-bottom: 1px solid hsl(180, 8%, 52%);
   padding-bottom: 1rem;
 }
 .jobs--container article .post--info .contract::before, .jobs--container article .post--info .location::before {
@@ -169,8 +168,8 @@ form .clear--button {
 .jobs--container article .languages--tools--container ul button {
   border: none;
   border-radius: 0.5rem;
-  background: hsl(180deg, 31%, 95%);
-  color: hsl(180deg, 29%, 50%);
+  background: hsl(180, 31%, 95%);
+  color: hsl(180, 29%, 50%);
   font-family: inherit;
   font-weight: 700;
   padding: 0.5rem;
@@ -206,7 +205,7 @@ form .clear--button {
     transition: 0.1s;
   }
   .jobs--container article h2:hover {
-    color: hsl(180deg, 29%, 50%);
+    color: hsl(180, 29%, 50%);
     transition: 0.1s;
   }
   .jobs--container article .languages--tools--container ul button {
@@ -214,8 +213,8 @@ form .clear--button {
     transition: 0.1s;
   }
   .jobs--container article .languages--tools--container ul button:hover {
-    color: hsl(180deg, 52%, 96%);
-    background: hsl(180deg, 29%, 50%);
+    color: hsl(180, 52%, 96%);
+    background: hsl(180, 29%, 50%);
     transition: 0.1s;
   }
 }/*# sourceMappingURL=general.css.map */

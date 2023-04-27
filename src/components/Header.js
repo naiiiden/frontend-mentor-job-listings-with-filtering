@@ -1,4 +1,8 @@
+import { useFilterValue } from "../FilterContext";
+
 const Header = () => {
+    const filter = useFilterValue()
+
     return (
         <header>
             <form className="header--form">
@@ -8,6 +12,9 @@ const Header = () => {
                     <input type="reset" value="Clear" className="clear--button"/>
                 </label>
             </form>
+            <div className="header-filter-board">
+                {filter.map(item => <p>{item}</p>)}
+            </div>
         </header>
     )
 }
