@@ -5,6 +5,7 @@ const filterReducer = (state, action) => {
 
     switch (action.type) {
         case 'ADD_FILTER': return state.includes(action.filterItem) ? state : [...state, action.filterItem]
+        case 'REMOVE_FILTER': return state.filter(item => item !== action.filterItem)
         case 'CLEAR': return []
         default: return state
     }
