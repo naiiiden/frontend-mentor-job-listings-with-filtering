@@ -5,7 +5,6 @@ const JobPosition = ({ company_logo, company, new_job, featured, position, poste
     
     const listLanguages = languages.map((language) => 
         <li>
-            {/* test reset button */}
             <button onClick={() => dispatch({ type: 'CLEAR' })}>reset</button>
             <button onClick={() => dispatch({ type: 'ADD_FILTER', filterItem: language })}>{language}</button>
         </li>
@@ -13,9 +12,7 @@ const JobPosition = ({ company_logo, company, new_job, featured, position, poste
     
     const listTools = tools.map((tool) => 
         <li>
-            {/* test reset button */}
             <button onClick={() => dispatch({ type: 'CLEAR' })}>reset</button>
-            <button onClick={() => dispatch({ type: 'REMOVE_FILTER', filterItem: tool })}>remove {tool}</button>
             <button onClick={() => dispatch({ type: 'ADD_FILTER', filterItem: tool })}>{tool}</button>
         </li>
     );

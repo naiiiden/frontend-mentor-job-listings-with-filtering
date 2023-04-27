@@ -1,19 +1,20 @@
-import { useFilterValue } from "../FilterContext";
+import { useFilterValue, useFilterDispatch } from "../FilterContext";
 
 const Header = () => {
     const filter = useFilterValue()
+    const dispatch = useFilterDispatch()
 
     return (
         <header>
-            <form className="header--form">
+            <div className="header--form">
                 <label htmlFor="search" className="form--label">
                     <span className="label--invisible">Search</span>
                     <input id="search" type="text" className="text--input"/>
-                    <input type="reset" value="Clear" className="clear--button"/>
                 </label>
-            </form>
+                    <button className="clear--button" onClick={() => dispatch({ type: 'CLEAR' })}>Clear</button>
+            </div>
             <div className="header-filter-board">
-                {filter.map(item => <p>{item}</p>)}
+                {filter.map(item => <button onClick={() => dispatch({ type: 'REMOVE_FILTER', filterItem: item})}>{item}</button>)}
             </div>
         </header>
     )
