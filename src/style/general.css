@@ -108,6 +108,14 @@ header {
     text-decoration: underline;
     transition: 0.1s;
   }
+  .header-filters-container button {
+    transition: 0.2s;
+    cursor: pointer;
+  }
+  .header-filters-container button:hover span {
+    background: hsl(180, 14%, 20%);
+    transition: 0.2s;
+  }
 }
 .jobs--container {
   margin-top: 2rem;

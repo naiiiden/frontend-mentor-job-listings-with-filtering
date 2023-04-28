@@ -94,6 +94,18 @@ header {
                 transition: .1s;
             }
         }
+
+        button {
+            transition: .2s;
+            cursor: pointer;
+
+            &:hover {
+                span {
+                    background: $very-dark-grayish-cyan;
+                    transition: .2s;
+                }
+            }
+        }
     }
 }
 
