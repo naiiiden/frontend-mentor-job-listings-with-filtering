@@ -1,6 +1,6 @@
 import { useFilterDispatch } from "../FilterContext";
 
-const JobPosition = ({ company_logo, company, new_job, featured, position, postedAt, contract, location, languages, tools, role, level }) => {
+const JobPosition = ({ company_logo, company, new_job, featured, position, postedAt, contract, location, languages, tools }) => {
     const dispatch = useFilterDispatch()
     
     const listLanguages = languages.map((language) => 
@@ -17,7 +17,7 @@ const JobPosition = ({ company_logo, company, new_job, featured, position, poste
     
 
     return (
-        <article>
+        <article className={`${featured ? 'featured' : ''}`}> 
             <img src={company_logo} alt=""/>
             <div className="job--information">
                 <div className="company--name--container">

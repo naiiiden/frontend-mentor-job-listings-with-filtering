@@ -128,13 +128,16 @@ header {
   background: #fff;
   border-radius: 4.875px;
   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
-  border-left: 4px solid hsl(180, 29%, 50%);
   display: flex;
   flex-direction: column;
   align-items: flex-start;
   position: relative;
   gap: 1rem;
   padding: 1rem;
+  border-left: 4px solid transparent;
+}
+.jobs--container article.featured {
+  border-left: 4px solid hsl(180, 29%, 50%);
 }
 .jobs--container article img {
   width: 56px;
