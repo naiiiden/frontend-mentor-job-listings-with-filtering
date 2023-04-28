@@ -20,6 +20,14 @@ img {
   height: auto;
 }
 
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  clip: rect(0, 0, 0, 0);
+}
+
 header {
   height: 7.5rem;
   background-color: hsl(180, 29%, 50%);
@@ -191,13 +199,6 @@ header {
 .jobs--container article .post--info .contract::before, .jobs--container article .post--info .location::before {
   content: "•";
   margin-right: 0.5rem;
-}
-.jobs--container article .post--info .sr-only {
-  position: absolute;
-  width: 1px;
-  height: 1px;
-  margin: -1px;
-  clip: rect(0, 0, 0, 0);
 }
 .jobs--container article .languages--tools--container ul {
   list-style-type: none;

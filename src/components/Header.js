@@ -6,6 +6,7 @@ const Header = () => {
 
     return (
         <header>
+            <h1 class="sr-only">Developer Jobs Board</h1>
             {filter.length > 0 && (
                 <>
                     <div className="header-filters-container">
