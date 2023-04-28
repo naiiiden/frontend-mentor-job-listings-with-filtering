@@ -1,9 +1,10 @@
 .jobs--container {
-    margin-top: 2rem;
     padding: 3rem 1.5rem;
     display: flex;
     flex-direction: column;
     gap: 3rem;
+    max-width: 1300px;
+    margin: 2rem auto 0 auto;
 
     article {
         background: #fff;
