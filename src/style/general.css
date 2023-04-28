@@ -136,6 +136,9 @@ header {
   padding: 1rem;
   border-left: 4px solid transparent;
 }
+.jobs--container article .uppercase {
+  text-transform: uppercase;
+}
 .jobs--container article.featured {
   border-left: 4px solid hsl(180, 29%, 50%);
 }
@@ -165,9 +168,6 @@ header {
   padding: 0.25rem 0.375rem;
   border-radius: 0.75rem;
   font-size: 0.875rem;
-}
-.jobs--container article .company--name--container .new--span.new--span, .jobs--container article .company--name--container .featured--span.new--span {
-  margin-left: 1rem;
 }
 .jobs--container article .company--name--container .new--span.featured--span, .jobs--container article .company--name--container .featured--span.featured--span {
   background: hsl(180, 14%, 20%);
