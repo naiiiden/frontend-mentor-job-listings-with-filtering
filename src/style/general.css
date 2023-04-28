@@ -29,13 +29,24 @@ header {
   position: relative;
 }
 
-form {
+.header-filters-container {
   padding: 6.25rem 1.5rem 0 1.5rem;
 }
-form label {
+.header-filters-container .filters-container {
   position: relative;
+  width: 100%;
+  border: none;
+  border-radius: 4.875px;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  min-height: 2.5rem;
+  background: #fff;
+  padding: 1rem 5rem 1rem 1rem;
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  flex-wrap: wrap;
 }
-form .label--invisible {
+.header-filters-container .label--invisible {
   position: absolute;
   opacity: 0;
   visibility: hidden;
@@ -44,17 +55,11 @@ form .label--invisible {
           user-select: none;
   pointer-events: none;
 }
-form .text--input {
-  width: 100%;
-  border: none;
-  border-radius: 4.875px;
-  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
-  height: 2.5rem;
-}
-form .clear--button {
+.header-filters-container .clear--button {
   position: absolute;
-  right: 1rem;
-  top: 0;
+  right: 1.25rem;
+  top: 50%;
+  transform: translateY(-50%);
   font-family: inherit;
   font-weight: 500;
   font-size: 1rem;
@@ -69,19 +74,19 @@ form .clear--button {
     background-repeat: no-repeat;
     background-size: 100% 100%;
   }
-  form {
+  .header-filters-container {
     padding: 6rem 8vw 0 8vw;
   }
-  form .text--input {
-    height: 3rem;
+  .header-filters-container .filters-container {
+    min-height: 3rem;
   }
 }
 @media screen and (min-width: 1024px) {
-  form .clear--button {
+  .header-filters-container .clear--button {
     cursor: pointer;
     transition: 0.1s;
   }
-  form .clear--button:hover {
+  .header-filters-container .clear--button:hover {
     color: hsl(180, 29%, 50%);
     text-decoration: underline;
     transition: 0.1s;

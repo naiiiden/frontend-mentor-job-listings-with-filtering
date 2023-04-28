@@ -8,15 +8,11 @@ const Header = () => {
         <header>
             {filter.length > 0 && (
                 <>
-                    <div className="header--form">
-                        <label htmlFor="search" className="form--label">
-                            <span className="label--invisible">Search</span>
-                            <input id="search" type="text" className="text--input"/>
-                        </label>
-                            <button className="clear--button" onClick={() => dispatch({ type: 'CLEAR' })}>Clear</button>
-                    </div>
-                    <div className="header-filter-board">
-                        {filter.map(item => <button onClick={() => dispatch({ type: 'REMOVE_FILTER', filterItem: item})}>{item}</button>)}
+                    <div className="header-filters-container">
+                            <div id="search" type="text" className="filters-container">
+                                    {filter.map(item => <button onClick={() => dispatch({ type: 'REMOVE_FILTER', filterItem: item})}>{item}</button>)}
+                                <button className="clear--button" onClick={() => dispatch({ type: 'CLEAR' })}>Clear</button>
+                            </div>
                     </div>
                 </>
             )}
