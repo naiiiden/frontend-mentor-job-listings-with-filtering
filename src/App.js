@@ -27,9 +27,9 @@ const App = () => {
   return (
     <div>
       <Header/>
-      <div className="jobs--container">
+      <main className="jobs--container">
         {JobsList}
-      </div>
+      </main>
     </div>
   )
 }
