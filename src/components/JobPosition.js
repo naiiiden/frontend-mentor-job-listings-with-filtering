@@ -13,14 +13,14 @@ const JobPosition = ({ company_logo, company, new_job, featured, position, poste
             <button onClick={() => dispatch({ type: 'ADD_FILTER', filterItem: level })}>{level}</button>
         </li>
 
-    const listLanguages = languages.map((language) => 
-        <li>
+    const listLanguages = languages.map((language, index) => 
+        <li key={index}>
             <button onClick={() => dispatch({ type: 'ADD_FILTER', filterItem: language })}>{language}</button>
         </li>
     );
     
-    const listTools = tools.map((tool) => 
-        <li>
+    const listTools = tools.map((tool, index) => 
+        <li key={index}>
             <button onClick={() => dispatch({ type: 'ADD_FILTER', filterItem: tool })}>{tool}</button>
         </li>
     );

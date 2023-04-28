@@ -6,12 +6,12 @@ const Header = () => {
 
     return (
         <header>
-            <h1 class="sr-only">Developer Jobs Board</h1>
+            <h1 className="sr-only">Developer Jobs Board</h1>
             {filter.length > 0 && (
                 <>
                     <div className="header-filters-container">
                             <div id="search" type="text" className="filters-container">
-                                    {filter.map(item => <button onClick={() => dispatch({ type: 'REMOVE_FILTER', filterItem: item})}>{item}<span>X</span></button>)}
+                                    {filter.map((item, index) => <button key={index} onClick={() => dispatch({ type: 'REMOVE_FILTER', filterItem: item})}>{item}<span>X</span></button>)}
                                 <button className="clear--button" onClick={() => dispatch({ type: 'CLEAR' })}>Clear</button>
                             </div>
                     </div>
