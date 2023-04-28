@@ -1,8 +1,18 @@
 import { useFilterDispatch } from "../FilterContext";
 
-const JobPosition = ({ company_logo, company, new_job, featured, position, postedAt, contract, location, languages, tools }) => {
+const JobPosition = ({ company_logo, company, new_job, featured, position, postedAt, contract, location, languages, tools, role, level }) => {
     const dispatch = useFilterDispatch()
-    
+
+    const roleFilter = 
+        <li>
+            <button onClick={() => dispatch({ type: 'ADD_FILTER', filterItem: role })}>{role}</button>
+        </li>
+
+    const levelFilter = 
+        <li>
+            <button onClick={() => dispatch({ type: 'ADD_FILTER', filterItem: level })}>{level}</button>
+        </li>
+
     const listLanguages = languages.map((language) => 
         <li>
             <button onClick={() => dispatch({ type: 'ADD_FILTER', filterItem: language })}>{language}</button>
@@ -43,6 +53,8 @@ const JobPosition = ({ company_logo, company, new_job, featured, position, poste
             </div>
             <div className="languages--tools--container">
                 <ul>
+                    {roleFilter}
+                    {levelFilter}
                     {listLanguages}
                     {listTools}    
                 </ul>
