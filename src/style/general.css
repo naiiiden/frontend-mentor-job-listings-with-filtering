@@ -42,7 +42,6 @@ header {
 }
 .header-filters-container .filters-container {
   position: relative;
-  width: 100%;
   border: none;
   border-radius: 4.875px;
   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
