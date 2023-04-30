@@ -134,6 +134,10 @@
 
             .languages--tools--container {
                 margin-left: auto;
+
+                ul {
+                    justify-content: flex-end;
+                }
             }
         }
     }

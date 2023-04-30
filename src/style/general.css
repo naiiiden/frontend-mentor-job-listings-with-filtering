@@ -242,6 +242,9 @@ header {
   .jobs--container article .languages--tools--container {
     margin-left: auto;
   }
+  .jobs--container article .languages--tools--container ul {
+    justify-content: flex-end;
+  }
 }
 @media screen and (min-width: 1024px) {
   .jobs--container article h2 {
