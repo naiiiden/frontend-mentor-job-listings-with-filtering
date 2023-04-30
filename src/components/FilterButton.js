@@ -5,7 +5,7 @@ const FilterButton = ({ filterItem, text  }) => {
 
     return (
         <li>
-            <button onClick={() => dispatch({ type: 'ADD_FILTER', filterItem: filterItem })}>{text}</button>
+            <button className="filter-button" onClick={() => dispatch({ type: 'ADD_FILTER', filterItem: filterItem })}>{text}</button>
         </li>
     )
 }

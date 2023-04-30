@@ -11,7 +11,7 @@ const Header = () => {
                 <>
                     <div className="header-filters-container">
                             <div id="search" className="filters-container">
-                                    {filter.map((item, index) => <button key={index} onClick={() => dispatch({ type: 'REMOVE_FILTER', filterItem: item})}>{item}<span>X</span></button>)}
+                                    {filter.map((item, index) => <button className="filter-button" key={index} onClick={() => dispatch({ type: 'REMOVE_FILTER', filterItem: item})}>{item}<span>X</span></button>)}
                                 <button className="clear--button" onClick={() => dispatch({ type: 'CLEAR' })}>Clear</button>
                             </div>
                     </div>

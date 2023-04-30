@@ -76,23 +76,6 @@ header {
   background: none;
   color: hsl(180, 14%, 20%);
 }
-.header-filters-container button {
-  border: none;
-  border-radius: 0.5rem;
-  background: hsl(180, 31%, 95%);
-  color: hsl(180, 29%, 50%);
-  font-family: inherit;
-  font-weight: 700;
-  padding: 0.5rem 0 0.5rem 0.5rem;
-  font-size: 0.875rem;
-}
-.header-filters-container button span {
-  margin-left: 0.5rem;
-  background: hsl(180, 29%, 50%);
-  color: hsl(180, 52%, 96%);
-  padding: 0.5rem;
-  border-radius: 0 0.5rem 0.5rem 0;
-}
 
 @media screen and (min-width: 768px) {
   header {
@@ -116,14 +99,6 @@ header {
     color: hsl(180, 29%, 50%);
     text-decoration: underline;
     transition: 0.1s;
-  }
-  .header-filters-container button {
-    transition: 0.2s;
-    cursor: pointer;
-  }
-  .header-filters-container button:hover span {
-    background: hsl(180, 14%, 20%);
-    transition: 0.2s;
   }
 }
 .jobs--container {
@@ -262,5 +237,33 @@ header {
     color: hsl(180, 52%, 96%);
     background: hsl(180, 29%, 50%);
     transition: 0.1s;
+  }
+}
+.filter-button {
+  border: none;
+  border-radius: 0.5rem;
+  background: hsl(180, 31%, 95%);
+  color: hsl(180, 29%, 50%);
+  font-family: inherit;
+  font-weight: 700;
+  padding: 0.5rem 0 0.5rem 0.5rem;
+  font-size: 0.875rem;
+}
+.filter-button span {
+  margin-left: 0.5rem;
+  background: hsl(180, 29%, 50%);
+  color: hsl(180, 52%, 96%);
+  padding: 0.5rem;
+  border-radius: 0 0.5rem 0.5rem 0;
+}
+
+@media screen and (min-width: 1024px) {
+  .filter-button {
+    transition: 0.2s;
+    cursor: pointer;
+  }
+  .filter-button:hover span {
+    background: hsl(180, 14%, 20%);
+    transition: 0.2s;
   }
 }/*# sourceMappingURL=general.css.map */

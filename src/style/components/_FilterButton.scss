@@ -1,0 +1,32 @@
+.filter-button {
+    border: none;
+    border-radius: .5rem;
+    background: $light-grayish-cyan2;
+    color: $desaturated-dark-cyan;
+    font-family: inherit;
+    font-weight: 700;
+    padding: .5rem 0 .5rem .5rem;
+    font-size: .875rem;
+
+    span {
+        margin-left: .5rem;
+        background: $desaturated-dark-cyan;
+        color: $light-grayish-cyan;
+        padding: .5rem;
+        border-radius: 0 .5rem .5rem 0;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .filter-button {
+        transition: .2s;
+        cursor: pointer;
+
+        &:hover {
+            span {
+                background: $very-dark-grayish-cyan;
+                transition: .2s;
+            }
+        }
+    }
+}
