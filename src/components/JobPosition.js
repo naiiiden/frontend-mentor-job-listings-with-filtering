@@ -2,14 +2,13 @@ import FilterButton from "./FilterButton";
 
 const JobPosition = ({ company_logo, company, new_job, featured, position, postedAt, contract, location, languages, tools, role, level }) => {
 
-    const roleFilter = <FilterButton type='ADD_FILTER' filterItem={role} text={role}/>
+    const roleFilter = <FilterButton filterItem={role} text={role}/>
 
-    const levelFilter = <FilterButton type='ADD_FILTER' filterItem={level} text={level}/> 
+    const levelFilter = <FilterButton filterItem={level} text={level}/> 
 
-    const listLanguages = languages.map((language, index) => <FilterButton key={index} type='ADD_FILTER' filterItem={language} text={language}/>);
+    const listLanguages = languages.map((language, index) => <FilterButton key={index} filterItem={language} text={language}/>);
     
-    const listTools = tools.map((tool, index) => <FilterButton key={index} type='ADD_FILTER' filterItem={tool} text={tool}/> );
-    
+    const listTools = tools.map((tool, index) => <FilterButton key={index} filterItem={tool} text={tool}/>);
 
     return (
         <article className={`${featured ? 'featured' : ''}`}> 
