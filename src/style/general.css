@@ -55,15 +55,6 @@ header {
   gap: 0.75rem;
   flex-wrap: wrap;
 }
-.header-filters-container .label--invisible {
-  position: absolute;
-  opacity: 0;
-  visibility: hidden;
-  -webkit-user-select: none;
-     -moz-user-select: none;
-          user-select: none;
-  pointer-events: none;
-}
 .header-filters-container .clear--button {
   position: absolute;
   right: 1.25rem;

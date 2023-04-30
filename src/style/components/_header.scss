@@ -26,14 +26,6 @@ header {
         flex-wrap: wrap;
     }
 
-    .label--invisible {
-        position: absolute;
-        opacity: 0;
-        visibility: hidden;
-        user-select: none;
-        pointer-events: none;
-    }
-
     .clear--button {
         position: absolute;
         right: 1.25rem;
