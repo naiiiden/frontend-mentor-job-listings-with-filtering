@@ -28,6 +28,11 @@ img {
   clip: rect(0, 0, 0, 0);
 }
 
+button:focus-visible, a:focus-visible {
+  outline: hsl(180, 29%, 50%) dashed;
+  outline-offset: 3px;
+}
+
 header {
   height: 7.5rem;
   background-color: hsl(180, 29%, 50%);

@@ -34,6 +34,11 @@ img {
     clip: rect(0, 0, 0, 0);
 }
 
+button:focus-visible, a:focus-visible {
+    outline: $desaturated-dark-cyan dashed;
+    outline-offset: 3px;
+}
+
 @import "./components/header";
 @import "./components/jobposition";
 @import "./components/FilterButton";
