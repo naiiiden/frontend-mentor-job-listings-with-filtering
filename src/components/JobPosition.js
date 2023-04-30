@@ -1,29 +1,14 @@
-import { useFilterDispatch } from "../FilterContext";
+import FilterButton from "./FilterButton";
 
 const JobPosition = ({ company_logo, company, new_job, featured, position, postedAt, contract, location, languages, tools, role, level }) => {
-    const dispatch = useFilterDispatch()
 
-    const roleFilter = 
-        <li>
-            <button onClick={() => dispatch({ type: 'ADD_FILTER', filterItem: role })}>{role}</button>
-        </li>
+    const roleFilter = <FilterButton type='ADD_FILTER' filterItem={role} text={role}/>
 
-    const levelFilter = 
-        <li>
-            <button onClick={() => dispatch({ type: 'ADD_FILTER', filterItem: level })}>{level}</button>
-        </li>
+    const levelFilter = <FilterButton type='ADD_FILTER' filterItem={level} text={level}/> 
 
-    const listLanguages = languages.map((language, index) => 
-        <li key={index}>
-            <button onClick={() => dispatch({ type: 'ADD_FILTER', filterItem: language })}>{language}</button>
-        </li>
-    );
+    const listLanguages = languages.map((language, index) => <FilterButton key={index} type='ADD_FILTER' filterItem={language} text={language}/>);
     
-    const listTools = tools.map((tool, index) => 
-        <li key={index}>
-            <button onClick={() => dispatch({ type: 'ADD_FILTER', filterItem: tool })}>{tool}</button>
-        </li>
-    );
+    const listTools = tools.map((tool, index) => <FilterButton key={index} type='ADD_FILTER' filterItem={tool} text={tool}/> );
     
 
     return (
