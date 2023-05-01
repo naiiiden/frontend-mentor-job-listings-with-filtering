@@ -24,6 +24,12 @@ header {
         align-items: center;
         gap: .75rem;
         flex-wrap: wrap;
+
+        ul {
+            list-style: none;
+            display: flex;
+            gap: 1rem;
+        }
     }
 
     .clear--button {
