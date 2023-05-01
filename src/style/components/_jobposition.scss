@@ -92,17 +92,6 @@
                 display: flex;
                 gap: 1rem;
                 flex-wrap: wrap;
-
-                button {
-                    border: none;
-                    border-radius: .5rem;
-                    background: $light-grayish-cyan2;
-                    color: $desaturated-dark-cyan;
-                    font-family: inherit;
-                    font-weight: 700;
-                    padding: .5rem;
-                    font-size: .875rem;
-                }
             }
         }
     }

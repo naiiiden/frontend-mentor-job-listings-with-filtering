@@ -15,7 +15,7 @@ const Header = () => {
                                 <ul>
                                     {filter.map((item, index) =>
                                         <li key={index}>
-                                            <button className="filter-button" onClick={() => dispatch({ type: 'REMOVE_FILTER', filterItem: item })}>{item} <span>X</span></button>
+                                            <button className="filter-button header-filter-button" onClick={() => dispatch({ type: 'REMOVE_FILTER', filterItem: item })}>{item} <span>X</span></button>
                                         </li>
                                         // <FilterButton key={index} type='REMOVE_FILTER' filterItem={item} text={[item, <span>X</span>]}/>
                                     )}

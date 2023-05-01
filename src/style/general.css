@@ -64,6 +64,7 @@ header {
   list-style: none;
   display: flex;
   gap: 1rem;
+  overflow-x: auto;
 }
 .header-filters-container .clear--button {
   position: absolute;
@@ -184,16 +185,6 @@ header {
   gap: 1rem;
   flex-wrap: wrap;
 }
-.jobs--container article .languages--tools--container ul button {
-  border: none;
-  border-radius: 0.5rem;
-  background: hsl(180, 20%, 96%);
-  color: hsl(180, 29%, 37%);
-  font-family: inherit;
-  font-weight: 700;
-  padding: 0.5rem;
-  font-size: 0.875rem;
-}
 
 @media screen and (min-width: 768px) {
   .jobs--container {
@@ -247,8 +238,13 @@ header {
   color: hsl(180, 29%, 37%);
   font-family: inherit;
   font-weight: 700;
-  padding: 0.5rem 0 0.5rem 0.5rem;
+  padding: 0.5rem;
   font-size: 0.875rem;
+}
+.filter-button.header-filter-button {
+  padding: 0 0 0 0.5rem;
+  display: flex;
+  align-items: center;
 }
 .filter-button span {
   margin-left: 0.5rem;
