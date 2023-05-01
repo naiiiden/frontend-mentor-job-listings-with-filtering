@@ -20,7 +20,7 @@ const Header = () => {
                                         // <FilterButton key={index} type='REMOVE_FILTER' filterItem={item} text={[item, <span>X</span>]}/>
                                     )}
                                 </ul>
-                                <button className="clear--button" onClick={() => dispatch({ type: 'CLEAR' })}>Clear</button>
+                                <button className="clear--button" onClick={() => dispatch({ type: 'CLEAR' })} aria-label="Clear filters">Clear</button>
                             </div>
                     </div>
                 </>
