@@ -1,4 +1,5 @@
 import { useFilterValue, useFilterDispatch } from "../FilterContext";
+import FilterButton from "./FilterButton";
 
 const Header = () => {
     const filter = useFilterValue()
@@ -11,7 +12,9 @@ const Header = () => {
                 <>
                     <div className="header-filters-container">
                             <div id="search" className="filters-container">
-                                    {filter.map((item, index) => <button className="filter-button" key={index} onClick={() => dispatch({ type: 'REMOVE_FILTER', filterItem: item})}>{item}<span>X</span></button>)}
+                                <ul>
+                                    {filter.map((item, index) => <FilterButton key={index} filterItem={item} text={[item, <span>X</span>]}/>)}
+                                </ul>
                                 <button className="clear--button" onClick={() => dispatch({ type: 'CLEAR' })}>Clear</button>
                             </div>
                     </div>
