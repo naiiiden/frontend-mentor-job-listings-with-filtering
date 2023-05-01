@@ -29,13 +29,13 @@ img {
 }
 
 button:focus-visible, a:focus-visible {
-  outline: hsl(180, 29%, 50%) dashed;
+  outline: hsl(180, 29%, 37%) dashed;
   outline-offset: 3px;
 }
 
 header {
   height: 7.5rem;
-  background-color: hsl(180, 29%, 50%);
+  background-color: hsl(180, 29%, 37%);
   background-image: url("../images/bg-header-mobile.svg");
   background-size: 100% 100%;
   background-repeat: no-repeat;
@@ -97,7 +97,7 @@ header {
     transition: 0.1s;
   }
   .header-filters-container .clear--button:hover {
-    color: hsl(180, 29%, 50%);
+    color: hsl(180, 29%, 37%);
     text-decoration: underline;
     transition: 0.1s;
   }
@@ -126,7 +126,7 @@ header {
   text-transform: uppercase;
 }
 .jobs--container article.featured {
-  border-left: 4px solid hsl(180, 29%, 50%);
+  border-left: 4px solid hsl(180, 29%, 37%);
 }
 .jobs--container article img {
   width: 56px;
@@ -144,11 +144,11 @@ header {
   gap: 0.5rem;
 }
 .jobs--container article .company--name--container h3 {
-  color: hsl(180, 29%, 50%);
+  color: hsl(180, 29%, 37%);
   font-size: 1rem;
 }
 .jobs--container article .company--name--container .new--span, .jobs--container article .company--name--container .featured--span {
-  background: hsl(180, 29%, 50%);
+  background: hsl(180, 29%, 37%);
   color: #fff;
   font-weight: 700;
   padding: 0.25rem 0.375rem;
@@ -169,9 +169,9 @@ header {
   display: flex;
   align-items: center;
   gap: 0.5rem;
-  color: hsl(180, 8%, 52%);
+  color: hsl(180, 8%, 44%);
   font-weight: 500;
-  border-bottom: 1px solid hsl(180, 8%, 52%);
+  border-bottom: 1px solid hsl(180, 8%, 44%);
   padding-bottom: 1rem;
 }
 .jobs--container article .post--info .contract::before, .jobs--container article .post--info .location::before {
@@ -187,8 +187,8 @@ header {
 .jobs--container article .languages--tools--container ul button {
   border: none;
   border-radius: 0.5rem;
-  background: hsl(180, 31%, 95%);
-  color: hsl(180, 29%, 50%);
+  background: hsl(180, 20%, 96%);
+  color: hsl(180, 29%, 37%);
   font-family: inherit;
   font-weight: 700;
   padding: 0.5rem;
@@ -227,7 +227,7 @@ header {
     transition: 0.1s;
   }
   .jobs--container article h2:hover {
-    color: hsl(180, 29%, 50%);
+    color: hsl(180, 29%, 37%);
     transition: 0.1s;
   }
   .jobs--container article .languages--tools--container ul button {
@@ -236,15 +236,15 @@ header {
   }
   .jobs--container article .languages--tools--container ul button:hover {
     color: hsl(180, 52%, 96%);
-    background: hsl(180, 29%, 50%);
+    background: hsl(180, 29%, 37%);
     transition: 0.1s;
   }
 }
 .filter-button {
   border: none;
   border-radius: 0.5rem;
-  background: hsl(180, 31%, 95%);
-  color: hsl(180, 29%, 50%);
+  background: hsl(180, 20%, 96%);
+  color: hsl(180, 29%, 37%);
   font-family: inherit;
   font-weight: 700;
   padding: 0.5rem 0 0.5rem 0.5rem;
@@ -252,7 +252,7 @@ header {
 }
 .filter-button span {
   margin-left: 0.5rem;
-  background: hsl(180, 29%, 50%);
+  background: hsl(180, 29%, 37%);
   color: hsl(180, 52%, 96%);
   padding: 0.5rem;
   border-radius: 0 0.5rem 0.5rem 0;
