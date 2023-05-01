@@ -1,7 +1,6 @@
 import FilterButton from "./FilterButton";
 
 const JobPosition = ({ company_logo, company, new_job, featured, position, postedAt, contract, location, languages, tools, role, level }) => {
-
     const roleFilter = <FilterButton type='ADD_FILTER' filterItem={role} text={role}/>
 
     const levelFilter = <FilterButton type='ADD_FILTER' filterItem={level} text={level}/> 
