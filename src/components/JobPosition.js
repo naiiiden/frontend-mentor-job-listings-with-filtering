@@ -14,11 +14,11 @@ const JobPosition = ({ company_logo, company, new_job, featured, position, poste
             <img src={company_logo} alt=""/>
             <div className="job--information">
                 <div className="company--name--container">
-                    <h3>{company}</h3>
+                    <h2>{company}</h2>
                     {new_job && <span className="new--span uppercase">New!</span>}
                     {featured && <span className="featured--span uppercase">Featured</span>}
                 </div>
-                <a href="/"><h2 className="job--position">{position}</h2></a>
+                <a href="/"><h3 className="job--position">{position}</h3></a>
                 <div className="post--info">
                     <p className="postedAt">
                         <span className="sr-only">Posted:</span>

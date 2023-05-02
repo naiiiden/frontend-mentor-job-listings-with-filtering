@@ -144,7 +144,7 @@ header {
   align-items: center;
   gap: 0.5rem;
 }
-.jobs--container article .company--name--container h3 {
+.jobs--container article .company--name--container h2 {
   color: hsl(180, 29%, 37%);
   font-size: 1rem;
 }
@@ -162,7 +162,7 @@ header {
 .jobs--container article a {
   text-decoration: none;
 }
-.jobs--container article h2 {
+.jobs--container article h3 {
   color: hsl(180, 14%, 20%);
   font-size: 1rem;
 }
@@ -214,10 +214,10 @@ header {
   }
 }
 @media screen and (min-width: 1024px) {
-  .jobs--container article h2 {
+  .jobs--container article h3 {
     transition: 0.1s;
   }
-  .jobs--container article h2:hover {
+  .jobs--container article h3:hover {
     color: hsl(180, 29%, 37%);
     transition: 0.1s;
   }
