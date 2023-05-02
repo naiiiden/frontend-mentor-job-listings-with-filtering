@@ -43,9 +43,10 @@ header {
 }
 
 .header-filters-container {
-  padding: 6.25rem 1.5rem 0 1.5rem;
+  padding: 0 1.5rem 0 1.5rem;
   max-width: 1300px;
   margin: auto;
+  transform: translate(0%, 145%);
 }
 .header-filters-container .filters-container {
   position: relative;
@@ -86,7 +87,7 @@ header {
     background-size: 100% 100%;
   }
   .header-filters-container {
-    padding: 6rem 8vw 0 8vw;
+    padding: 0 8vw 0 8vw;
   }
   .header-filters-container .filters-container {
     min-height: 3rem;
