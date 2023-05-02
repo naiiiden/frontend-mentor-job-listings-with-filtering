@@ -3,6 +3,7 @@
 This is a solution to the [Job listings with filtering challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/job-listings-with-filtering-ivstIPCt). Frontend Mentor challenges help you improve your coding skills by building realistic projects. 
 
 ## Live Preview
+https://naiiiden.github.io/frontend-mentor-job-listings-with-filtering/
 
 ### Screenshots
 #### Mobile Design
