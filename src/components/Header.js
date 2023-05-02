@@ -11,7 +11,7 @@ const Header = () => {
             {filter.length > 0 && (
                 <>
                     <div className="header-filters-container">
-                            <div id="search" className="filters-container">
+                            <nav id="search" className="filters-container">
                                 <ul>
                                     {filter.map((item, index) =>
                                         <li key={index}>
@@ -21,7 +21,7 @@ const Header = () => {
                                     )}
                                 </ul>
                                 <button className="clear--button" onClick={() => dispatch({ type: 'CLEAR' })} aria-label="Clear filters">Clear</button>
-                            </div>
+                            </nav>
                     </div>
                 </>
             )}
